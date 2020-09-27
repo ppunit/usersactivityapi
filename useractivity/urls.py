@@ -19,5 +19,7 @@ from user import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('/',views.index),
     path('userlist/',views.UserList.as_view())
+
 ]

@@ -5,6 +5,8 @@ from .models import User,ActivityPeriod
 from .serializers import UserDataSerializer
 
 # Create your views here.
+def index(request):
+    return render(request,'index.html')
 
 class UserList(APIView):
     def get(self,request):
